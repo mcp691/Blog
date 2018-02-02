@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: left;
+  background: #ea5821;
+  font-size: 2em;
+  border-bottom: 5px maroon solid;
+}
+
+.nav li a {
+  color: white;
+}
+
+.nav li a:hover {
+  background: orange;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin: 5% 10% 0 10%;
+  margin-bottom: -142px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/*Sticky Footer*/
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+
+.site-footer {
+  background: #ea5821;
+  border-top: 5px maroon solid;
+}
+/*end of Sticky Footer*/
