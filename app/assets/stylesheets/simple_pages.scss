@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Domine');
+
 html, body {
   height: 100%;
+  font-size: 1.2em;
+  line-height: 1em;
+  font-family: 'Domine', serif;
 }
 
 .nav {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   background: #ea5821;
-  font-size: 2em;
+  font-size: 1.5em;
   border-bottom: 5px maroon solid;
 }
 
@@ -48,3 +53,7 @@ html, body {
   border-top: 5px maroon solid;
 }
 /*end of Sticky Footer*/
+
+#posts h3 {
+
+}

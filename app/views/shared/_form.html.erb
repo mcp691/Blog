@@ -10,18 +10,16 @@
       </ul>
     </div>
   <% end %>
-
+<br>
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title %>
+    <%= form.text_field :title, placeholder: "Title", id: :post_title, class: "form-control" %>
   </div>
-
+<br>
   <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content, id: :post_content %>
+    <%= form.text_area :content, placeholder: "What's on your mind?", rows: 4, id: :post_content, class: "form-control" %>
   </div>
-
+<br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit Post", class: "btn btn-primary" %>
   </div>
 <% end %>
