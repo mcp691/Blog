@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   get 'simple_pages/index'
 
+  get 'simple_pages/thank_you'
+
   root 'simple_pages#index'
 end

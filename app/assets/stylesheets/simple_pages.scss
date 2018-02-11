@@ -1,41 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Domine');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Lobster|Source+Sans+Pro');
 
 html, body {
   height: 100%;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1em;
-  font-family: 'Domine', serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url(/assets/orange.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .nav {
   display: flex;
   justify-content: center;
-  background: #ea5821;
+  background: #f0f0f0;
   font-size: 1.5em;
-  border-bottom: 5px maroon solid;
 }
 
 .nav li a {
-  color: white;
+  color: black;
+  font-family: 'Lobster', sans-serif;
 }
 
 .nav li a:hover {
-  background: orange;
+  background: #79b4bd;
+  color: white;
 }
 
 .page {
-  width: 50%;
+  margin: auto;
+  margin-bottom: 10%;
   background-color: #f0f0f0;
-  box-shadow: 5px 5px 10px 5px;
+  box-shadow: 5px 5px 50px 5px rgb(83,109,133);
   border-radius: 15px;
   padding: 1% 5% 3% 5%;
+  max-width: 800px;
 }
 
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
   margin: 5% 10% 0 10%;
-  margin-bottom: -142px;
+  margin-bottom: -100px;
 }
 
 .page-wrap:after {
@@ -45,15 +51,31 @@ html, body {
 
 /*Sticky Footer*/
 .site-footer, .page-wrap:after {
-  height: 142px;
+  height: 100px;
 }
 
 .site-footer {
-  background: #ea5821;
-  border-top: 5px maroon solid;
+  background: #f0f0f0;
+  opacity: 0.7;
 }
 /*end of Sticky Footer*/
 
-#posts h3 {
+#blog-title {
+  font-family: 'Lobster', cursive;
+}
 
+.header {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.btn-primary {
+  background-color: #79b4bd;
+  border: 1px #79b4bd solid;
+  &:hover {
+    background-color: #536d85;
+  }
+}
+
+.btn-warning {
+  background-color: #f9cf7c;
 }

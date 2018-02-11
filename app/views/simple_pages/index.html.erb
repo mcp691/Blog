@@ -1,5 +1,5 @@
-<h1>Welcome to my blog!</h1>
-<p>The date and time is currently <%= Time.now.strftime("%d/%m/%Y %H:%M") %></p>
+<h1 id="blog-title" style="font-size: 4em;">Bloggert</h1>
+<p>The date and time is currently <%= Time.now.strftime("%m/%d/%Y %H:%M") %></p>
 <hr>
-<h2>Newest Posts</h2>
+<h1 class="header">Newest Posts</h1>
 <%= render @posts %>
