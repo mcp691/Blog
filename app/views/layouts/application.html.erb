@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bloggert</title>
+  <title>Bloggert&trade;</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -23,11 +23,12 @@
   <li class="nav-item">
     <a class="nav-link" href="/simple_pages/contact">Contact</a>
   </li>
+  <li class="nav-item justify-content-end">
+    <a class="nav-link" href="#">Login</a>
+  </li>
 </ul>
   <div class="page-wrap" align="center">
-    <div class="page">
       <center><%= yield %></center>
-    </div>
   </div>
   <footer class="site-footer">
     &copy; Bloggert

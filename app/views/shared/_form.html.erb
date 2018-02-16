@@ -1,25 +1,27 @@
+<div class="page">
 <%= form_with(model: post, local: true) do |form| %>
-  <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+<% if post.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-      <ul>
-      <% post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-<br>
-  <div class="field">
-    <%= form.text_field :title, placeholder: "Title", id: :post_title, class: "form-control" %>
-  </div>
-<br>
-  <div class="field">
-    <%= form.text_area :content, placeholder: "What's on your mind?", rows: 4, id: :post_content, class: "form-control" %>
-  </div>
-<br>
-  <div class="actions">
-    <%= form.submit "Submit Post", class: "btn btn-primary" %>
-  </div>
+  <ul>
+    <% post.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
 <% end %>
+<br>
+<div class="field">
+  <%= form.text_field :title, placeholder: "Title", id: :post_title, class: "form-control" %>
+</div>
+<br>
+<div class="field">
+  <%= form.text_area :content, placeholder: "What's on your mind?", rows: 4, id: :post_content, class: "form-control" %>
+</div>
+<br>
+<div class="actions">
+  <%= form.submit "Submit Post", class: "btn btn-primary" %>
+</div>
+<% end %>
+</div>

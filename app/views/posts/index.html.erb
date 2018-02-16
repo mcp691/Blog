@@ -1,19 +1,16 @@
-<p id="notice"><%= notice %></p>
-
-<h1 class="header">Posts</h1>
-
-<div>
-  <%= form_with(url: posts_path, method: 'get', local: true) do |form| %>
-  <%= form.text_field :q, id: 'q', value: params[:q], :placeholder => 'Enter search here...', :class => 'form-control mr-sm-2' %>
+<div class="page">
   <br>
-  <%= form.submit 'Search Posts', :class => 'btn btn-primary', :type => 'submit' %>
-  <% end %>
-</div>
-<br>
-<p>OR</p>
+  <h1 class="header">Posts</h1>
+  <%= form_with(url: posts_path, method: 'get', local: true) do |form| %>
+    <%= form.text_field :q, id: 'q', value: params[:q], :placeholder => 'Enter search here...', :class => 'form-control mr-sm-2' %>
+    <br>
+    <%= form.submit 'Search Posts', :class => 'btn btn-primary', :type => 'submit' %>
+    <% end %>
+    <br>
+    <p>OR</p>
+    <%= link_to 'Post Something New', new_post_path, class: 'btn btn-warning'%>
+  </div>
 
-<%= link_to 'Post Something New', new_post_path, class: 'btn btn-warning'%>
-
-<div>
-<%= render @posts.reverse %>
+  <div>
+  <%= render @posts.reverse %>
 </div>

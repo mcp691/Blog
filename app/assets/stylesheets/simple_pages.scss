@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Lobster|Source+Sans+Pro');
 
+* {
+  margin: 0px;
+}
+
 html, body {
   height: 100%;
   font-size: 1em;
@@ -29,9 +33,9 @@ html, body {
 
 .page {
   margin: auto;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   background-color: #f0f0f0;
-  box-shadow: 5px 5px 50px 5px rgb(83,109,133);
+  box-shadow: 5px 5px 20px rgb(83,109,133);
   border-radius: 15px;
   padding: 1% 5% 3% 5%;
   max-width: 800px;
@@ -60,12 +64,13 @@ html, body {
 }
 /*end of Sticky Footer*/
 
-#blog-title {
+#blog-title, h1 {
   font-family: 'Lobster', cursive;
 }
 
 .header {
   font-family: 'Archivo Narrow', sans-serif;
+  margin-bottom: 5%;
 }
 
 .btn-primary {
