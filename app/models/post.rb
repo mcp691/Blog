@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
 
-  belongs_to :user
+  belongs_to :user, optional: true
 
   def self.search(search_term)
     if Rails.env != "production"
