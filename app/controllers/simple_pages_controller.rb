@@ -1,6 +1,6 @@
 class SimplePagesController < ApplicationController
   def index
-    @posts = Post.limit(3).reverse
+    @posts = Post.all.reverse
   end
 
   def thank_you
