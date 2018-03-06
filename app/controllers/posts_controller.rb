@@ -41,7 +41,6 @@ class PostsController < ApplicationController
       end
     end
   end
-
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
