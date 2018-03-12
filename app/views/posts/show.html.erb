@@ -1,7 +1,5 @@
 <div class="page">
-  <p>
-    <h3><%= @post.title %></h3>
-  </p>
+  <h3><%= @post.title %></h3>
   <hr>
   <p>
     <%= @post.content %>
@@ -10,6 +8,7 @@
 
   <% if signed_in? %>
   <%= link_to 'Edit', edit_post_path(@post) %> |
+  <%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %> |
   <% end %>
   <%= link_to 'Back', posts_path %>
 </div>
