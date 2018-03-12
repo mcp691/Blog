@@ -19,7 +19,11 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = Post.new
+    if user_signed_in?
+      @post = Post.new
+    else
+      redirect_to (new_user_session_path), alert: "You need to be logged in to post to the blog!"
+    end
   end
 
   # GET /posts/1/edit
