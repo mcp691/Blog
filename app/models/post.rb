@@ -1,6 +1,8 @@
 class Post < ApplicationRecord
 
   belongs_to :user, optional: true
+  validates :content, presence: true, allow_blank: false
+  validates :title, presence: true, allow_blank: false
 
   def self.search(search_term)
     if Rails.env != "production"
