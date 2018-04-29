@@ -2,15 +2,16 @@
   <br>
   <h1 class="header">Posts</h1>
   <%= form_with(url: posts_path, method: 'get', local: true) do |form| %>
-    <%= form.text_field :q, id: 'q', value: params[:q], :placeholder => 'Enter search here...', :class => 'form-control mr-sm-2' %>
-    <br>
-    <%= form.submit 'Search Posts', :class => 'btn btn-primary', :type => 'submit' %>
-    <% end %>
-    <br>
-    <p>OR</p>
-    <%= link_to 'Post Something New', new_post_path, class: 'btn btn-warning'%>
-  </div>
+  <%= form.text_field :q, id: 'q', value: params[:q], :placeholder => 'Enter search here...', :class => 'form-control mr-sm-2' %>
+  <br>
+  <%= form.submit 'Search Posts', :class => 'btn btn-primary', :type => 'submit' %>
+  <% end %>
+  <br>
+  <p>OR</p>
+  <%= link_to 'Post Something New', new_post_path, class: 'btn btn-warning'%>
+</div>
 
-  <div>
+<div>
+  <div class="alert alert-info" style="display:none" role="alert">A new entry has been made!</div>
   <%= render @posts.reverse %>
 </div>
