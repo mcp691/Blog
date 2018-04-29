@@ -1,0 +1,192 @@
+/* line 1, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: white;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 15, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #536d85;
+}
+/* line 17, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #e3582d;
+}
+
+/* line 22, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 26, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 32, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 39, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 49, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 55, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow|Lobster|Source+Sans+Pro");
+/* line 3, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+* {
+  margin: 0px;
+}
+
+/* line 7, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+html, body {
+  height: 100%;
+  font-size: 1em;
+  line-height: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url(/assets/orange.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* line 17, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.nav {
+  display: flex;
+  justify-content: center;
+  background: #f0f0f0;
+  font-size: 1.5em;
+}
+
+/* line 24, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.nav li a {
+  color: black;
+  font-family: 'Lobster', sans-serif;
+}
+
+/* line 29, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.nav li a:hover {
+  background: #79b4bd;
+  color: white;
+}
+
+/* line 34, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.page {
+  margin: auto;
+  margin-bottom: 5%;
+  background-color: #f0f0f0;
+  box-shadow: 5px 5px 20px #536d85;
+  border-radius: 15px;
+  padding: 1% 5% 3% 5%;
+  max-width: 800px;
+}
+
+/* line 44, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin: 5% 10% 0 10%;
+  margin-bottom: -100px;
+}
+
+/* line 51, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/*Sticky Footer*/
+/* line 57, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.site-footer, .page-wrap:after {
+  height: 100px;
+}
+
+/* line 61, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.site-footer {
+  background: #f0f0f0;
+  opacity: 0.7;
+}
+
+/*end of Sticky Footer*/
+/* line 67, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+#blog-title, h1 {
+  font-family: 'Lobster', cursive;
+}
+
+/* line 71, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.alert {
+  width: 40%;
+  margin-bottom: 5%;
+}
+
+/* line 76, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.header {
+  font-family: 'Archivo Narrow', sans-serif;
+  margin-bottom: 5%;
+}
+
+/* line 81, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.btn-primary {
+  background-color: #79b4bd;
+  border: 1px #79b4bd solid;
+}
+/* line 84, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.btn-primary:hover {
+  background-color: #536d85;
+}
+
+/* line 89, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.btn-warning {
+  background-color: #f9cf7c;
+}
+
+/* line 93, /home/matthew/Desktop/WebDev/Blog/app/assets/stylesheets/simple_pages.scss */
+.remember {
+  display: flex;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
